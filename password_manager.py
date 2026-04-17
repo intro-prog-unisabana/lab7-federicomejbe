@@ -36,7 +36,7 @@ def encrypt_passwords_in_file(filename: str) -> None:
 
 def change_password(filename: str, website: str, password: str) -> bool:
     """TODO: Parte 3."""
-        with open(filename, mode='r') as f:
+    with open(filename, mode='r') as f:
         reader = csv.reader(f)
         rows = []
         for row in reader:
